@@ -1,10 +1,10 @@
 ﻿  main.cpp
 C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\Car.h(13,1): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(23,20): warning C4244: 'initializing': conversion from 'sf::Int64' to 'float', possible loss of data
-C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(36,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(40,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(44,40): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(48,40): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(61,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(61,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(30,20): warning C4244: 'initializing': conversion from 'sf::Int64' to 'float', possible loss of data
+C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(43,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(47,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(51,40): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(55,40): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(73,30): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\Race\main.cpp(74,31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   Race.vcxproj -> C:\Users\Redmi Book Pro 14\Documents\C++\VS\Visual C++\Game\Race\x64\Debug\Race.exe
