@@ -1,7 +1,8 @@
 #include<iostream>
 #include"Car.h"
 #include"Let.h"
-//#include"Map.h"
+
+
 
 int main()
 {
@@ -22,6 +23,15 @@ int main()
     float let_count = -300;
     float let_psosition_x = 370;
     float randomX = 350 + rand() % 201;
+    sf::Text text;
+    sf::Font font;
+    int count = 100;
+    std::string health = "Health";
+    font.loadFromFile("font/Godzilla.ttf");
+    text.setFont(font);
+    text.setFillColor(sf::Color::White);
+    text.setPosition(1000, 50);
+
 
 
 
@@ -67,18 +77,21 @@ int main()
         std::cout << " wall "<< static_cast<int>(wall.let_sprite.getPosition().y) << " Car " << static_cast<int>(car.raceSprite.getPosition().y)<< std::endl;
         if(static_cast<int>(wall.let_sprite.getPosition().y) == static_cast<int>(car.raceSprite.getPosition().y))
         {
-            std::cout << "aaaaaaa";
+           --count;
         }
+        health = std::to_string(count);
+        text.setString("Health " + health);
         // game speed
-        BackgroundY1 += 0.3;
-        BackgroundY2 += 0.3;
-        let_count += 0.3; // speed let
+        BackgroundY1 += 0.5;
+        BackgroundY2 += 0.5;
+        let_count += 0.5; // speed let
 
 
         window.draw(s_map);
         window.draw(s_map1);
         window.draw(wall.let_sprite);
         window.draw(car.raceSprite);
+        window.draw(text);
 
         window.display();
     }
