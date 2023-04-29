@@ -1,6 +1,6 @@
 #include<iostream>
 #include"Car.h"
-#include"Let.h"
+//#include"Let.h"
 
 
 
@@ -19,21 +19,17 @@ int main()
     //s_map.setScale(1.2f, 1.6f);
     //s_map1.setScale(1.2f, 1.6f);
 
-    Let wall(450, 0, 420, 200);
-    float let_count = -300;
-    float let_psosition_x = 370;
+    Let wall(450, 0);
+    float letCount = -300;
+    float letPsositionX = 370;
     float randomX = 350 + rand() % 201;
     sf::Text text;
     sf::Font font;
-    int count = 100;
-    std::string health = "Health";
+    std::string strHealth = "Health";
     font.loadFromFile("font/Godzilla.ttf");
     text.setFont(font);
     text.setFillColor(sf::Color::White);
     text.setPosition(1000, 50);
-
-
-
 
     float currentFrame = 0;
     sf::Clock clock;
@@ -67,24 +63,21 @@ int main()
             BackgroundY1 = 0;
             BackgroundY2 = BackgroundY1 - 800;
         }
-        if (let_count >= 800)
+        if (letCount >= 800)
         {
-            let_count = -300 + rand() % 380;
-            let_psosition_x = 370 + rand() % 380;
+            letCount = -300 + rand() % 380;
+            letPsositionX = 370 + rand() % 380;
 //            std::cout << let_psosition_x << std::endl;
         }
-        wall.let_sprite.setPosition(let_psosition_x, let_count);
-        std::cout << " wall "<< static_cast<int>(wall.let_sprite.getPosition().y) << " Car " << static_cast<int>(car.raceSprite.getPosition().y)<< std::endl;
-        if(static_cast<int>(wall.let_sprite.getPosition().y) == static_cast<int>(car.raceSprite.getPosition().y))
-        {
-           --count;
-        }
-        health = std::to_string(count);
-        text.setString("Health " + health);
+       wall.let_sprite.setPosition(letPsositionX, letCount);
+
+        car.checkCrash(wall);
+        strHealth = std::to_string(car.getHealth());
+        text.setString("Health " + strHealth);
         // game speed
         BackgroundY1 += 0.5;
         BackgroundY2 += 0.5;
-        let_count += 0.5; // speed let
+        letCount += 0.5; // speed let
 
 
         window.draw(s_map);

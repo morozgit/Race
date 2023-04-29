@@ -1,6 +1,6 @@
 #include"Let.h"
 
-Let::Let(float x, float y, float hight,float widht) : m_x(x),m_y(y),m_hight(hight),m_widht(widht)
+Let::Let(float x, float y) : m_x(x),m_y(y)
 {
 
     let_image.loadFromFile("Images/let.png");
@@ -8,6 +8,14 @@ Let::Let(float x, float y, float hight,float widht) : m_x(x),m_y(y),m_hight(high
     let_texture.loadFromImage(let_image);
 
     let_sprite.setTexture(let_texture);
-    let_sprite.setTextureRect(sf::IntRect(m_x, m_y, m_hight, m_widht));
+    let_sprite.setTextureRect(sf::IntRect(m_x, m_y, 100, 120));
     let_sprite.setScale(1.2f, 1);
 }
+std::pair<float,float>Let::getCoordinates()
+{
+    return std::pair<float,float>(m_x, m_y);
+}
+ void Let::setLetPsositionX(float x)
+ {
+     m_x = x;
+ }
