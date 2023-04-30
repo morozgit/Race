@@ -21,5 +21,6 @@ FILE(
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
 add_executable(Race ${SRCS} ${HDRS})
+add_subdirectory(Test)
 
 target_link_libraries(Race sfml-graphics sfml-audio)
