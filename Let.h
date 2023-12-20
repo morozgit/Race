@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include <Python.h>
 
 class Let
 {
@@ -15,3 +16,4 @@ private:
     sf::Texture let_texture;
 
 };
+
